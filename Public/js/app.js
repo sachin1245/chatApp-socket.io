@@ -10,9 +10,7 @@ socket.on('message', function(message) {
 	jQuery('.messages').append('<p>' + message.text +'</p>')
 });
 
-socket.emit('message', {
-	text: 'Hi buddy how are you?'
-});
+
 
 
 //handles submitting of new message
